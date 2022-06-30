@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 372eb502504cf664287e5779b05c880e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - astroidPrefab: {fileID: 8506047841664898315, guid: 9fdb70479c6adc045af67be1bb1f1d7e, type: 3}
+  - planetPrefab: {fileID: 918675745625711938, guid: 4b1d05f4840761447a5f1326389652a6, type: 3}
+  - orbitCenterPrefab: {fileID: 3306004636973211538, guid: bfeaa76268a22aa4db69bd369f12f1ed, type: 3}
+  - orbitSystemPrefab: {fileID: 1404137592954267470, guid: d5bf049527af5aa4c8e2ac693c69ce8e, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

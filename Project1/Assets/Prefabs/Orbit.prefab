@@ -107,7 +107,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5234971007681771443}
   - component: {fileID: 7182249957540600296}
-  - component: {fileID: -4574235563772848243}
+  - component: {fileID: -648641541601501659}
   m_Layer: 0
   m_Name: Orbit
   m_TagString: Untagged
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   horizonalSpeed: 10
---- !u!114 &-4574235563772848243
+--- !u!114 &-648641541601501659
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

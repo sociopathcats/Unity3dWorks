@@ -6,9 +6,11 @@ public class MoveBackground : MonoBehaviour
 {
     private Vector3 startPos;
     private float repeatWidth;
-    [SerializeField]private float moveSpeed;
+    [SerializeField] private float moveSpeed;
+    private GameManager gameManager;
     void Start()
     {
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         startPos = transform.position;
         repeatWidth = GetComponent<BoxCollider2D>().size.x / 2;
     }
@@ -16,10 +18,14 @@ public class MoveBackground : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.left * moveSpeed*Time.deltaTime);
-        if (transform.position.x < startPos.x - repeatWidth)
+        if (gameManager.isGameActive)
         {
-            transform.position = startPos;
+            transform.Translate(Vector3.left * moveSpeed * Time.deltaTime);
+            if (transform.position.x < startPos.x - repeatWidth)
+            {
+                transform.position = startPos;
+            }
         }
+
     }
 }

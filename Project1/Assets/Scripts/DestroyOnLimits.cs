@@ -15,15 +15,12 @@ public class DestroyOnLimits : MonoBehaviour
    
     void Update()
     {
-        OnDestroy(-110);
+        if (transform.position.x < gameManager.leftLimit)
+        {
+            Destroy(gameObject);
+        }
     }
     
-    private void OnDestroy(float leftLimit)
-    {   if(transform.position.x < leftLimit)
-        {
-           
-            Destroy(gameObject);  
-          }
-     }
+ 
         
 }
